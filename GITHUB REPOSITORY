@@ -12,13 +12,12 @@ print(df.describe())
 average_math = df['Math_Grade'].mean()
 average_english = df['English_Grade'].mean()
 average_science = df['Science_Grade'].mean()
-average_social = df[ 'Social_Grade'].mean()
 
 # Plot bar chart for average grades
-subjects = ['Math', 'English', 'Science' , 'social']
-averages = [average_math, average_english, average_science , average_social] 
+subjects = ['Math', 'English', 'Science' ]
+averages = [average_math, average_english, average_science ] 
   # plot bar print...
-plt.bar(subjects, averages, color=['blue', 'green', 'orange' , 'purple'])
+plt.bar(subjects, averages, color=['blue', 'green', 'orange' ])
 plt.title('Average Grades by Subject')
 plt.xlabel('Subjects')
 plt.ylabel('Average Grade')
